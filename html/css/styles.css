@@ -75,9 +75,16 @@
 }
 
 .nav1 ul li a, .nav2 ul li a{
+    transition-property: color;
+    transition-duration: 0.75s;
+    transition-delay: 0s;
     color: #44f814;
 }
 
+.nav1 ul li a:hover, .nav2 ul li a:hover{
+    zoom: 125%;
+    color: #fc4b08;
+}
 
 .nav1{
     font-size: 20px;
