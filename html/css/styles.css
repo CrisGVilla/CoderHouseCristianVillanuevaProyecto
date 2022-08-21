@@ -1,0 +1,351 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+                                            /* Header */
+
+.header{
+    grid-area: header;
+    background-color: #000000;
+    color: #44f814;
+    border: solid #44f814 2px;
+    font-size: 75px;
+    text-align: center;
+    height: 100%;
+}
+
+
+                                            /* Footer */
+
+.footer{
+    grid-area: footer;
+    background-color: #000000;
+    color: #44f814;
+    border: solid #44f814 2px;
+    font-size: 75px;
+    text-align: center;
+    height: 100%;
+}
+
+                                            /* INDEX */
+ 
+.bodyIndex{
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas:
+    "header"
+    "mainIndex"
+    "footer";
+
+}
+
+
+
+.mainIndex{
+    height: 98%;
+    width: 100%;
+    margin-bottom: 1%;
+    grid-area: mainIndex;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 20% 45% 35%;
+    grid-template-areas:
+    "buttonsIndex buttonsIndex"
+    "nav1 productosDestacados"
+    "nav2 productosDestacados";
+}
+
+.mainIndex nav ul{
+    text-align: center;
+    padding: 0;
+}
+
+.nav1, .nav2{
+    display: grid;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    border: solid #44f814 3px;
+}
+
+.nav1 ul li a, .nav2 ul li a{
+    color: #44f814;
+}
+
+
+.nav1{
+    font-size: 20px;
+    grid-area: nav1;
+}
+
+.nav2{
+    font-size: 23px;
+    grid-area: nav2;
+}
+
+.productosDestacados{
+    grid-area: productosDestacados;
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.destacadosImg{
+    height: 90%;
+}
+
+
+
+                                            /* BOTONES MAIN INDEX NAV                     */
+
+
+.buttonsIndex{
+    display: flex;
+    justify-content: space-between;
+    grid-area: buttonsIndex;
+}
+
+.logInOutNav{
+    display: flex;    
+    align-items: center;
+}
+
+.logInButton{
+    width: 55px;
+}
+
+.logOutButton{
+    align-items: center;
+    width: 43px;
+}
+
+.cartNav{
+    display: flex;
+    align-items: center;
+}
+
+.cartButton{    
+    width:43px;
+}
+
+
+                                                /* LOGIN */
+
+.loginBody{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15vh 25vh 50vh 15vh;
+    grid-template-areas: 
+    "loginHeader loginHeader loginHeader"
+    "avatar avatar avatar"
+    "form form form"
+    "loginFooter loginFooter loginFooter";
+}
+
+.loginHeader{
+    grid-area: loginHeader;
+    width: 100%;
+    background-color: #000000;
+    color: #44f814;
+    border: solid #44f814 2px;
+    font-size: 75px;
+    text-align: center;
+    height: 100%;
+}
+
+.loginFooter{
+    grid-area: loginFooter;
+    width: 100%;
+    background-color: #000000;
+    color: #44f814;
+    border: solid #44f814 2px;
+    font-size: 75px;
+    text-align: center;
+    height: 100%;
+}
+
+.avatar{
+    grid-area: avatar;
+    text-align: center;
+    height: 100%;
+}
+
+.avatar a img{
+    margin-top: 5px;
+    height: 100%;
+}
+
+
+.form{   
+    grid-area: form;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+form{
+    display: grid;
+    row-gap: 15px;
+    column-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "nombre apellido"
+    "radioGenre date"
+    "password rPassword"
+    "email rEmail"
+    "formButtons formButtons";
+}
+
+                                            /* AREAS DEL FORMULARIO CON GRID */
+
+input, .radioGenre{
+    text-align: center;
+}
+
+.nombre{
+    grid-area: nombre;
+}
+
+.apellido{
+    grid-area: apellido;
+}
+
+.password{
+    grid-area: password;
+}
+
+.rPassword{
+    grid-area: rPassword;
+}
+
+.radioGenre{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: solid #808080 1px;
+    height: 100%;
+    color: #808080;
+    grid-area: radioGenre;
+}
+
+.radioGenre label{
+    margin-left: 15px;
+}
+
+.date{
+    color: #808080;
+    height: 100%;
+    grid-area: date;
+}
+
+.email{
+    grid-area: email;
+}
+
+.rEmail{
+    grid-area: rEmail;
+}
+
+
+.formButtons{
+    margin: 0;
+    grid-area: formButtons;
+}
+
+.formButton{
+    font-weight: bold;
+    width: 90px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #2596be;
+    border: #2596be;
+    padding: 5px;
+    cursor: pointer;
+}
+                                                    /* CONTACT US */
+
+
+.contactUsBody{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas:
+    "header"
+    "mainContactUs"
+    "footer"
+    ;
+}                                       
+
+.ctcUsMain{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas:
+    "buttonsIndex buttonsIndex"
+    "ctcUsTxtLeft ctcUsTxtRight"
+    "ctcUsTxtArea txtAreaButton";
+}
+
+.buttonsIndex{
+    grid-area: buttonsIndex;
+    display:flex;
+    justify-content: space-between;
+}
+
+.ctcUsTxtLeft{
+    grid-area: ctcUsTxtLeft;
+    padding: 10px;
+    text-align: center;
+}
+
+.ctcUsTxtRight{
+    grid-area: ctcUsTxtRight;
+    padding: 10px;
+    text-align: center;
+}
+
+.ctcUsTxtArea{
+    display: grid;
+    justify-items: center;
+    grid-area: ctcUsTxtArea;
+}
+
+.txtctcUs{
+    text-align: center;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+.txtAreaButton{
+    grid-area: txtAreaButton;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1%;
+}
+
+.botontxt{
+    align-items: center;
+    grid-area: t4;
+    font-weight: bold;
+    width: 90px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #2596be;
+    border: #2596be;
+    height: 25%;
+    cursor: pointer;
+}
